@@ -1,8 +1,191 @@
-h1{
-	color: #00000;
-	text-align: center;
+html{
+	height: 100%;
+	width: 100%
+	margin: 0;
+	font-size: medium;
 }
 
-button:hover {
-	background-color: #e6e6e6
+body{
+	font-family: Arial, san-serif;
+	background: #fff
+	color: #222;
+}
+
+.navBar{
+	display: grid;
+	text-align: right;
+	grid-auto-columns: 100px auto 100px;
+	padding: 10px;
+	grid-template-rows: 20px;
+	grid-template-areas: "ImageSearch . AdvanceSearch"
+}
+
+a {
+	text-decoration: none;
+	font-family: Arial, Helvetica, san-serif;
+	font-size: 13px;
+	color: #222;
+}
+
+a:hover {
+	text-decoration: bold;
+}
+
+.mainCon {
+	align-self: center;
+    min-height: 100%;
+    display: flex;
+   	align-items: center;
+   	flex-direction: column;
+   	text-align: center;
+   	padding: 20px
+}
+
+.mainConAdv {
+	display: grid;
+	grid-auto-columns: auto;
+	padding: 10px;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"label1  box1" "label2  box2" "label3  box3" "label4  box4";
+}
+#label1{
+	grid-area: label1;
+ 	align-self: center;
+}
+#box1{
+	grid-area: box1;
+ 	align-self: center;
+}
+}
+#label2{
+	grid-area: label2;
+ 	align-self: center;
+}
+#box2{
+	grid-area: box2;
+ 	align-self: center;
+}
+#label3{
+	grid-area: label3;
+ 	align-self: center;
+}
+#box3{
+	grid-area: box3;
+ 	align-self: center;
+}
+#label4{
+	grid-area: label4;
+ 	align-self: center;
+}
+#box4{
+	grid-area: box4;
+ 	align-self: center;
+}
+
+
+#textLogo { 
+	flex-direction: column;
+	align-items: left;
+	color: #d93025;
+	font-size: 20px;
+}
+
+
+#bar {
+
+    height: 30px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 30px;
+}
+
+#searchbtnl{
+
+	border: none;
+    font-size: 15px;
+    color: #5F6368;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#searchbtnr {
+	border: none;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+    
+}
+#searchbtnImg{
+	border: none;
+    font-size: 15px;
+    color: #5F6368;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+
+#searchbtnAdv{
+	border: none;
+    font-size: 15px;
+    background-color: #357ae8;
+    color:#fff;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+#searchbtnl:hover {
+	border: 1px solid rgba(0, 0, 0, 0.226);
+}
+#searchbtnr:hover {
+	border: 1px solid rgba(0, 0, 0, 0.226);
+}
+#searchbtnImg:hover {
+	border: 1px solid rgba(0, 0, 0, 0.226);
+}
+#searchbtnAdv:hover {
+	border: 1px solid #2f5bb7;
+	background-color: #2f5bb7;
+	color: #fff;
+}
+
+.footer{
+	position: absolute ;
+	bottom: 0;
+	align-content: center;
+	display: grid;
+	grid-auto-columns: minmax(110px, 200px);
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    	"advertising business hsw . privacy terms settings";
+	;
+}
+#advertising {
+    grid-area: advertising;
+    align-self: center;
+    justify-self: center;
+}
+#business {
+    grid-area: business;
+    align-self: center;
+    justify-self: center;
+}
+#hsw {
+    grid-area: hsw;
+    align-self: center;
+    justify-self: center;
+}
+#privacy {
+    grid-area: privacy;
+    align-self: center;
+    justify-self: center;
+}
+#terms {
+    grid-area: terms;
+    align-self: center;
+    justify-self: center;
+}
+#settings {
+    grid-area: settings;
+    align-self: center;
+    justify-self: center;
 }

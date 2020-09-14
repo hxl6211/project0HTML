@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Google Search</title>
+        <title>Google Advanced Search</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-    	<h1>
-    		<form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-       	 </form>
-    </h1>
+
+        <div class="navBar">
+            <a href="Image.html"id="imageSearch" type>Image Search</a>
+            <a href="Main.html"id="Back">Back to Search</a>
+        </div>
+
+        <a href="" id="textLogo">Advance Search</a>
+        <div class= "mainConAdv">
+                <form action="https://google.com/search" > 
+                    <label id="label1">All these words:</label>
+                    <input type="text" name="as_q" id="box1">
+                    <br>
+                    <br>
+                    <label id="label2">Exact word/phrase:</label>
+                    <input type="text" name="as_epq" id="box2">
+                    <br>
+                    <br>
+                    <label id="label3">Any of these words:</label>
+                    <input type="text" name="as_oq" id="box3">
+                    <br>
+                    <br>
+                    <label id="label4">None of these words:</label>
+                    <input type="text" name="as_eq" id="box4">
+                   <br>
+                   <br> 
+                   <input type="submit" value="Advanced Search" id="searchbtnAdv">
+                </form>
+        </div>
+
+        <footer class="footer">
+            <a href="https://ads.google.com/intl/en_us/home/?" 
+            id="advertising">advertising</a>
+            <a href="https://smallbusiness.withgoogle.com/#!/" 
+            id="business">Business</a>
+            <a href="https://www.google.com/search/howsearchworks/?fg=1" 
+            id="hsw">How Search works</a>
+            <a href="https://policies.google.com/privacy?hl=en&fg=1" 
+            id="privacy">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en&fg=1" 
+            id="terms">Terms</a>
+            <a href="https://www.google.com/preferences?hl=en&fg=1" 
+            id="settings">Settings</a>
+        </footer>
+
+            
+    
+    
     </body>
 </html>
